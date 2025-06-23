@@ -25,5 +25,8 @@ if st.button("Send"):
         else:
             st.write("🤖 I'm not sure how to respond, but I'm here for you!")
 
+st.markdown(f"<div style='background:#f1f1f1;padding:10px;border-radius:10px;margin-bottom:10px;'>👤 {user_input}</div>", unsafe_allow_html=True)
+st.markdown(f"<div style='background:#dcf8c6;padding:10px;border-radius:10px;margin-bottom:10px;'>🤖 {response}</div>", unsafe_allow_html=True)
+
 st.markdown("---")
 st.caption("Made with ❤️ by Dafiq Elhaq")
