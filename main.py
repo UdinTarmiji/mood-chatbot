@@ -25,6 +25,20 @@ if st.button("Send"):
         else:
             st.write("🤖 I'm not sure how to respond, but I'm here for you!")
 
+        #save bot messege
+        st.session_state.chat.append(("You", user_input))
+        st.session_state.chat.append(("Bot", response))
+
+# --- Display chat history with bubbles ---
+for sender, messege in st.session_state.chat
+    if sender == "You":
+        st.markdown(f"<div style='background:#e0f7fa;padding:10px;border-radius:10;margin-bottom:5px;text-align:right'><b>🧍 {sender}:</b> {message}</div>",
+                    unsafe_allow_html=true)
+    else:
+        st.markdown(
+            f""<div style='background:#f1f8e9;padding:10px;border-radius:10px;margin-bottom:5px'><b>🤖 {sender}:</b> {message}</div>",
+            unsafe_allow_html=True)
+
 st.markdown(f"<div style='background:#f1f1f1;padding:10px;border-radius:10px;margin-bottom:10px;'>👤 {user_input}</div>", unsafe_allow_html=True)
 st.markdown(f"<div style='background:#dcf8c6;padding:10px;border-radius:10px;margin-bottom:10px;'>🤖 {response}</div>", unsafe_allow_html=True)
 
