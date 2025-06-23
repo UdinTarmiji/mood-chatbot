@@ -38,11 +38,11 @@ if st.button("Send"):
 for sender, message in st.session_state.chat:
     if sender == "You":
         st.markdown(
-            f"<div style='background:#e0f7fa;padding:10px;border-radius:10px;margin-bottom:5px;text-align:right'><b>🧍 {sender}:</b> {message}</div>",
+            f"<div style='background:#e0f7fa;padding:10px;border-radius:10px;margin-bottom:5px;text-align:right;color:black'><b>🧍 {sender}:</b> {message}</div>",
             unsafe_allow_html=True)
     else:
         st.markdown(
-            f"<div style='background:#f1f8e9;padding:10px;border-radius:10px;margin-bottom:5px'><b>🤖 {sender}:</b> {message}</div>",
+            f"<div style='background:#f1f8e9;padding:10px;border-radius:10px;margin-bottom:5px;color:black'><b>🤖 {sender}:</b> {message}</div>",
             unsafe_allow_html=True)
 
 st.markdown("---")
