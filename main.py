@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Mood Chatbot", page icon"🧠")
+st.set_page_config(page_title="Mood Chatbot", page_icon="🧠")
 
 st.title("🤖 Mood & Motivation Chatbot")
 st.write("Tell me how you're feeling today, and I'll try to respond like a friend 👂")
