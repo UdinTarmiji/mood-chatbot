@@ -8,13 +8,13 @@ st.write("Tell me how you're feeling today, and I'll try to respond like a frien
 #user input
 user_input = st.text_input("What's on your mind")
 
-#button
-if st.button("send"):
-  if user_input == "":
-    st.warning("Please type something first.")
-  else:
-    #basic keword
-    if "sad" in user_input.lower():
+# Button to get response
+if st.button("Send"):
+    if user_input == "":
+        st.warning("Please type something first.")
+    else:
+        # Basic keyword detection
+        if "sad" in user_input.lower():
             st.write("😔 It's okay to feel sad. You're not alone. Take some rest 💖")
         elif "happy" in user_input.lower():
             st.write("😊 That's awesome! Keep shining and share your joy with others!")
